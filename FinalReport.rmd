@@ -86,11 +86,11 @@ The chi-square test resulted in a percentage of 80. The p vaule is 2.2e
 ```{r}
 fisherXY(mydata$race,mydata$cappun)
 ```
-Every other race is different in each opinion on capital punishment in the selected data set. The P value still stays low. While the white races data shows they still have the highest favorism towards capital punisment.
+Every other race is different in each opinion on capital punishment in the selected data set. The P value still stays low. While the white races data shows they still have the highest favorism towards capital punishment.
 
 ## More data version
 
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!--> Today i practiced using data sets to figure out which races were in favor or opposed capital punishment. I found that white races in the collected data were in favor then opposed among all data groups. I used the helper file cat cat to help me out in my work.
