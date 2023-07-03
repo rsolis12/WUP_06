@@ -44,7 +44,11 @@ If not, then whose view differs from whom??
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+barchartGC(~class + Sex,data=ucdavis1)
+barchartGC(~class + Sex,data=ucdavis1, type="percent")
 
+```
 
 
 ## Now with The Most data (fewer variables gives more data points)
@@ -56,7 +60,12 @@ If not, then whose view differs from whom??
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 
-
+```{r}
+table1 <- xtabs(~race + cappun, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
+The white,black and the other races all have an amount of people in each race. White people are in favor of capital punishment with a favor of 65.10 also with having the lowest punishment by 34.90. Wgile black and others largely oppose the cappun by a 57.37 and 44.80 margin.
 
 ## Now with More data
 
@@ -66,8 +75,18 @@ If not, then whose view differs from whom??
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
+````{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+The chi-square test resulted in a percentage of 80. The p vuale
+
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
+Every other race is different in each opinion on capital punishment in the selected data set. The P value still stays low
 
 ## More data version
 
