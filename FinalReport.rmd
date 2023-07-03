@@ -86,7 +86,7 @@ The chi-square test resulted in a percentage of 80. The p vaule is 2.2e
 ```{r}
 fisherXY(mydata$race,mydata$cappun)
 ```
-Every other race is different in each opinion on capital punishment in the selected data set. The P value still stays low.
+Every other race is different in each opinion on capital punishment in the selected data set. The P value still stays low. While the white races data shows they still have the highest favorism towards capital punisment.
 
 ## More data version
 
