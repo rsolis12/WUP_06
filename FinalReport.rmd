@@ -52,7 +52,7 @@ barchartGC(~race + cappun,data=mydata, type="percent")
 ## Now with LESS data (more variables give less data due to NA's) create the approate graphic displays to answer the question.
 
 
-
+The graph show proportional favortism to cappun for the white race and the other race in percentage. While black is the highest in opposal in percentage followed by other.
 
 
 ### Numerical Descriptive Results
